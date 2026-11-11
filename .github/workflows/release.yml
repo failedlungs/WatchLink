@@ -23,7 +23,7 @@ jobs:
         run: chmod +x gradlew || true
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug
+        run: gradle assembleDebug
 
       - name: Create Release and Upload APK
         uses: softprops/action-gh-release@v2
